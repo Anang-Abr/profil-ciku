@@ -1,6 +1,6 @@
 const aboutButton = document.getElementById("about_button");
 
-aboutButton.onclick = function () {
+aboutButton.addEventListener("click", function () {
 	const aboutCiku = document.querySelector(".about_ciku");
 	aboutCiku.classList.toggle("show");
 	if (aboutCiku.classList.contains("show")) {
@@ -8,4 +8,4 @@ aboutButton.onclick = function () {
 	} else {
 		aboutButton.innerHTML = "Klik Disini";
 	}
-};
+});
